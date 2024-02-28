@@ -1,4 +1,3 @@
-using RegNets
 using Catlab
 using JSON3
 using Catlab.Graphics
@@ -9,7 +8,14 @@ using ModelingToolkit
 using HTTP
 
 
-@present SchASKEMRegNet <: SchRateSignedGraph begin
+@present SchASKEMRegNet begin
+  Sign::AttrType
+  sign::Attr(E,Sign)
+
+  A::AttrType
+  vrate::Attr(V,A)
+  erate::Attr(E,A)
+
   C::AttrType
   Name::AttrType
   initial::Attr(V,C)

@@ -32,7 +32,6 @@ import YAML
 import Statistics
 import MLStyle
 import Catlab
-import RegNets
 using Latexify
 end
 
